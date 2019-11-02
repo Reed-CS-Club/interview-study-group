@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/two-city-scheduling/
+    
 def twoCitySchedCost(self, costs: List[List[int]]) -> int:
     # The cost differences tell us how much cost we can avoid by picking city A over B.        
     a = sorted(costs, key=lambda cost: cost[1] - cost[0], reverse=True)
